@@ -520,7 +520,7 @@ scene.add(particles)
 const backgroundSound = new THREE.Audio(listener)
 const audioLoader = new THREE.AudioLoader()
 audioLoader.load(
-  'https://raw.githubusercontent.com/gwould/midautumn/97193562690a3e44a10a9f3345ecdec6150ece9b/Chi%E1%BA%BFc%20%C4%90%C3%A8n%20Lew%20Lew%20-%20Th%E1%BA%A7y%20Onip%20(Pino)%20_%20Quickie%20Ngo%20Remix%20_%20L%C3%AAu%20L%C3%AAu%20FA%20-%20Mixi%20QNT%20Nhism%20Rambo%20Sturdy.mp3',
+  'https://gwould.github.io/midautumn/assets/audio/Chi%E1%BA%BFc%20%C4%90%C3%A8n%20Lew%20Lew%20-%20Th%E1%BA%A7y%20Onip%20(Pino)%20_%20Quickie%20Ngo%20Remix%20_%20L%C3%AAu%20L%C3%AAu%20FA%20-%20Mixi%20QNT%20Nhism%20Rambo%20Sturdy.mp3',
   (buffer) => {
       backgroundSound.setBuffer(buffer)
       backgroundSound.setLoop(true)
