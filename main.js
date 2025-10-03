@@ -517,17 +517,18 @@ const particles = createParticles()
 scene.add(particles)
 
 // 🎶 Festival Music
+// 🎶 Festival Music
 const backgroundSound = new THREE.Audio(listener)
 const audioLoader = new THREE.AudioLoader()
 audioLoader.load(
-  'https://gwould.github.io/midautumn/assets/audio/lewlew.mp3',
+  'https://gwould.github.io/midautumn/assets/audio/lewlew.mp3', // đổi tên file cho ngắn gọn
   (buffer) => {
       backgroundSound.setBuffer(buffer)
       backgroundSound.setLoop(true)
       backgroundSound.setVolume(0.1)
-      backgroundSound.play()
   }
 )
+
 
 
 
@@ -701,6 +702,7 @@ setInterval(() => {
     )
 }, 5000) // every 5s
 // 🎚 Music Toggle Button
+
 const musicButton = document.getElementById('music-toggle')
 let musicPlaying = false
 
@@ -709,7 +711,7 @@ musicButton.addEventListener('click', () => {
         backgroundSound.play()
         musicButton.textContent = "🔇 Mute"
     } else {
-        backgroundSound.pause()
+        backgroundSound.stop()   // ✅ thay pause() bằng stop()
         musicButton.textContent = "🔊 Music"
     }
     musicPlaying = !musicPlaying
