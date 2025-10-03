@@ -526,6 +526,7 @@ audioLoader.load(
       backgroundSound.setBuffer(buffer)
       backgroundSound.setLoop(true)
       backgroundSound.setVolume(0.1)
+      backgroundSound.play()
   }
 )
 
